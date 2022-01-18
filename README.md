@@ -1,2 +1,2 @@
-# This is a repository of Simonop
-# NO IRRELEVANT FILES HERE
+# This is a private repository of Simonop
+# DO NOT UPLOAD ANY IRRELEVANT FILES HERE!!!
