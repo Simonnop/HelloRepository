@@ -35,7 +35,7 @@ print('abc'*4)
 
 print(2**3)
 
-a=pow(3,3)
+a = pow(3, 3)
 print(a)
 
 '''
@@ -46,10 +46,10 @@ print(a)
         - 返回True和False
 '''
 
-a1='str'
-a2='str'
-print(a1==a2)
-print(3<5<7==7)
+a1 = 'str'
+a2 = 'str'
+print(a1 == a2)
+print(3 < 5 < 7 == 7)
 
 '''
     逻辑类型(bool类型)
@@ -63,18 +63,21 @@ print(3<5<7==7)
         与 或 存在短路计算
 '''
 
-not(1==2)
+not(1 == 2)
 
-x=True
-y=False
+x = True
+y = False
 print(x or y)
 
 '''
     检查类型
         type()
+
+    强制类型转换
+        int(...)
 '''
 
-x=123
+x = 123
 print(type(x))
 
 '''
@@ -84,6 +87,6 @@ print(type(x))
     Python里面没有自加与自减运算符
 '''
 
-a=10
-a/=2
+a = 10
+a /= 2
 print(a)

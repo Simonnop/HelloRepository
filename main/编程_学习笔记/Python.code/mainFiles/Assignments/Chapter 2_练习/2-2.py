@@ -7,3 +7,6 @@ for i in range(1,3000,50):
                     break
                 j+=0.000005
             break
+
+
+

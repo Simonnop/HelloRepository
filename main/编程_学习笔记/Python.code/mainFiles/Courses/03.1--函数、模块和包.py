@@ -1,4 +1,4 @@
-'包是模块的集合,模块是函数的集合'
+#  包是模块的集合,模块是函数的集合
 
 '''
     声明函数
@@ -12,6 +12,15 @@
             函数名(参数)
             - 若参数未输入,则以默认值执行
             - 可以不指定参数名来设置值,则会依照顺序给参数传递值
+
+    函数形式
+        def func 语句相当于把一个函数对象赋值给 func
+        函数名只是一个对象的引用,可以赋给新函数名来调用
+        地位与变量相同:
+            可以嵌入列表,元组中
+            可以作为另一个函数的参数
+            可以嵌套定义函数
+
 '''
 
 def print_Sum(a=1,b=2):
@@ -20,6 +29,23 @@ def print_Sum(a=1,b=2):
 print_Sum()
 print_Sum(3,5)
 print_Sum(2,b=4)
+
+print_Sum2=print_Sum
+print_Sum==print_Sum2
+print_Sum is print_Sum2
+
+# 工厂函数,类的轻量级可行替代
+def maker(label):
+    def echo(message):
+        print(label+':'+message*3)
+    # maker的返回值
+    return echo
+
+Func=maker('Spam')  # Func收到返回的 echo
+Func('Ham!')   # 此时 Func=echo,label='Spam'(特别),message='Ham!'
+
+
+
 
 '''
     DocString 文档字符串
@@ -114,6 +140,14 @@ random.random()
 
     若想要执行的模块若在大包的子包内,则需要一级一级导入
 
+    
+'''
+
+'''
+    常用包:
+
+    词云包
+    pip install wordcloud
     
 '''
 
