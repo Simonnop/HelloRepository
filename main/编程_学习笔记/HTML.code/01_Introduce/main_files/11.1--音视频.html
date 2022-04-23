@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <title>11.1--音视频</title>
+</head>
+<body>
+    
+    <!-- 
+        audio 标签用来向页面中引入一个外部的音频文件
+            一般不允许用户自己控制播放
+        属性:
+            controls 允许用户控制播放
+            autoplay 自动播放(如果设置了autoplay,则打开页面时会自动播放)  
+            loop 循环播放
+    -->
+     
+    <audio src="../source/Possible Light - Ziv Moran.mp3" controls loop></audio>
+
+    <!-- 
+        除了通过src来指定外部文件的路径以外,还可以通过source来指定文件
+     -->
+
+    <audio controls>
+        对不起,您的浏览器不支持播放器   
+        <!-- 若支持则会被覆盖不会显示 -->
+        <source src="../source/Odesza _ Sasha Sloan - Falls (Golden Features Remix).flac">
+        <source src="../source/Possible Light - Ziv Moran.mp3">
+        <embed src="../source/Odesza _ Sasha Sloan - Falls (Golden Features Remix).flac" type="audio/flac" width="200" height="200">
+        <!-- embed 比较兼容老的ie版本,但需要指定文件格式,控制组件大小 -->
+        <!-- 可以添加多种文件格式,扩大支持范围,首先播放第一个 -->
+    </audio>
+    
+    <!-- 
+        video 标签用来向页面中引入一个外部的视频文件
+     -->
+
+    <!--我这里播放不了???   <video src="../source/Mayota_片头_调色.mp4"></video>  -->
+    
+    <video controls>
+        <source src="../source/Mayota_片头_调色.mp4">
+    </video>
+
+    <!-- 
+        引入外部视频,复制通用代码
+     -->
+
+    <iframe src="//player.bilibili.com/player.html?aid=504620192&bvid=BV1Pg411E7Ka&cid=381769235&page=1" scrolling="no" border="0" frameborder="no" width="1080" height="720" framespacing="0" allowfullscreen="true"> </iframe>
+
+</body>
+</html>

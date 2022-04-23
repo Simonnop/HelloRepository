@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03.1--文档的加载</title>
+    <script>
+
+        // 谷歌不会????
+        window.onload = function(){
+            document.write("hi");
+        }
+
+    </script>
+</head>
+<body>
+
+    <!-- 
+        浏览器在加载一个页面是,是按照自上向下的顺序加载的
+
+        读取到一行就运行一行
+        如果把script标签写在最上面,代码在执行时,页面内就还没有加载
+
+        加载页面完成再执行最上边的script: onload事件
+        为 window属性绑定
+
+        追求性能: 建议还是写下边(或者外部引入)
+     -->
+
+    <button id="btn">这是button</button>
+
+    <script>
+
+        var btn = document.getElementById("btn");
+
+        btn.onclick = function(){
+            alert("hello");
+        }
+
+    </script>
+    
+</body>
+</html>

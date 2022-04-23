@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11.1--选择器的权重</title>
+
+    <style>
+
+        #box{
+            color: royalblue;
+        }
+
+        .red{
+            color: red;
+            background-color: salmon;
+        }
+
+
+        div{
+            color: turquoise;
+        }
+
+        
+
+        /* 
+            样式的冲突
+                -当我们通过不同的选择器,选中相同的元素,并且属性设置不同的值,会发生样式的冲突
+
+            发生冲突时,由权重决定:
+
+            内联(1000) > id(100) > 类和伪类(10) > 元素选择器(1) > 通配选择器(0) > 继承(无)
+
+            比较权重(优先级),把所有权重进行相加计算
+                -相加的结果不能跨数量级
+
+            权重一样,看后面的
+
+            样式后面加上  !important
+            直接成为最高优先级,慎用!!!
+        */
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="red" id="box">这是什么颜色??</div>
+    
+</body>
+</html>

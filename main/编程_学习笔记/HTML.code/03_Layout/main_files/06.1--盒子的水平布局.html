@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>06.1--盒子的水平布局</title>
+    <style>
+        .outer{
+            width: 200px;
+            height:400px;
+            border: 10px red solid;
+        }
+        .inner{
+            width: auto;
+            height: 100%;
+            background-color: lightgreen;
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+
+        /* 
+            元素的水平方向的布局
+                元素在其父元素中水平方向的位置由以下几个属性共同决定
+                    margin-left
+                    border-left
+                    padding-left
+                    width
+                    padding-right
+                    border-right
+                    margin-right
+                
+                且 必须 满足:
+                    七个值的和等于其父元素内容区的宽度
+
+                如果不成立,则称其为过度约束,浏览器为自动调整
+                    - 如果没有 auto的情况,会直接调整 margin-right的大小
+                    - width,margin-left,margin-right可以设置为 auto 
+                    - width的值默认是 auto
+        */
+    </style>
+</head>
+<body>
+
+    <div class="outer">
+        <div class="inner"></div>
+    </div>
+    
+</body>
+</html>

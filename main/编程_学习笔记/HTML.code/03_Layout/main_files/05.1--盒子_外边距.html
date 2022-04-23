@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05.1--盒子_外边距</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: lightpink;
+            border: 10px lightgreen solid;
+        
+        /* 
+            外边距(margin)
+                - 外边距不会影响盒子可见框的大小
+                - 会影响盒子的位置
+                - 一共有四个方向的外边距:(值分正负)
+                    margin-top
+                    margin-right
+                    margin-bottom
+                    margin-left
+                - 简写 margin: ... ;
+
+            元素在页面中是自左向右的顺序排列的
+            
+            默认情况设置左与上外边距会使本元素移动
+            默认情况设置右与下外边距会使其他元素移动
+        */
+
+        margin-top: 100px;
+        margin-left: 20px;
+        margin-bottom: 100px;
+
+        }
+
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: lightpink;
+            border: 10px lightgreen solid;
+
+            margin-top: -50px;
+            margin-left: 20px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    
+    <div class="box1"></div>
+
+    <div class="box2"></div>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05.1--绝对定位元素的布局</title>
+    <style>
+        body{
+            font-size: 50px;
+
+        }
+
+        .box1{
+            position: absolute;
+
+            width: 200px;
+            height: 200px;
+            background-color: rgb(255, 46, 255);
+
+            /* 
+                对于开启了定位元素.可以通过 z-index属性来指定元素的层级
+                    z-index需要一个整数作为参数,值越大的元素层级越高
+                        元素层级越高越优先显示
+
+                    如果元素的层级一样,则优先显示靠下的位置
+
+                    祖先元素的层级再高,也不会盖住后代元素
+            */
+
+            z-index: 1;
+        }
+
+        .box2{
+            position: absolute;
+
+            width: 200px;
+            height: 200px;
+            background-color: sandybrown;
+            left: 50px;
+            top: 150px;
+
+            z-index: 2;
+        }
+
+        .box3{
+            position: absolute;
+
+            width: 200px;
+            height: 200px;
+            background-color: rgb(96, 244, 244);
+
+            left: 100px;
+            top: 50px;
+
+            z-index: 3;
+        }
+
+       
+
+    </style>
+</head>
+<body>
+    <div class="box1">1
+        
+    </div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ch">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12.1--轮廓和圆角</title>
+    <style>
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+
+            /*  box-shadow 用来设置阴影效果,不影响页面布局
+
+                一般默认处于正下方
+
+                第一个值:水平偏移量
+                第二个值:垂直偏移量
+                第三个值:模糊半径
+                第四个值:颜色
+            
+            */
+
+            box-shadow: 10px 10px 20px rgba(125, 185, 110, 0.795) ;
+        }
+
+        /*  
+            
+                outline 设置轮廓线,用法与 border一样
+                
+                不同在于 outline不影响布局
+
+            */
+
+        .box1:hover {
+            outline: 10px red solid;
+        }
+
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+
+            /* 
+            
+            设置圆角: border-radius
+            设置的值为园的半径
+
+            设置一个值: 四个角
+            设置两个值: 左上+右下  右上+左下
+            设置三个值: 左上  右上+左下  右下
+            设置四个值: 左上  右上 右下  左下
+
+            设置50%: 变成圆形
+
+            
+            */
+            border-radius: 40px;
+
+            /* 
+            border-bottom-right-radius: ;
+            border-bottom-left-radius: ;
+            border-top-left-radius: ;
+            border-top-right-radius: ; 
+
+            设置一个值为园
+            设置两个值为椭圆
+            */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box1"></div>
+    <span>hello</span>
+
+    <div class="box2"></div>
+
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01.1--文档流</title>
+    <style>
+        .box1{
+            background-color: lightblue;
+        }
+        .box2{
+            width: 100px;
+            background-color: lightseagreen;
+        }
+
+        span{
+            background-color: #bfa;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+
+        文档流(normal flow)
+            -网页是一个多层的结构,一层叠着一层
+            -通过css可以为每一层来设置样式
+            -用户只看得到最上面的一层
+            -最底层为文档流,是网页的基础
+
+        元素在文档流中的特点
+            -块元素: 独占一行,默认高度为父元素的全部(被内容撑开)
+            -行内元素: 不会独占一行,只占自身大小
+     -->
+
+    <div class="box1">我是div1</div>
+    <div class="box2">我是div2</div>
+
+    <span>我是span </span>&nbsp;
+    <span>我是span </span>&nbsp;
+    <span>我是span </span>
+    
+</body>
+</html>

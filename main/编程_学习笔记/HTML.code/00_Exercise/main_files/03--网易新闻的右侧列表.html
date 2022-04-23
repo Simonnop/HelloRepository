@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03--网易新闻的右侧列表</title>
+    <link rel="stylesheet" href="../CSS/Reset.css">
+    <style>
+
+        a{
+            text-decoration: none;
+        }
+
+        .news-box{
+            width: 300px;
+            height: 350px;
+
+            margin: 50px auto;
+
+            border-top: 2px #ddd solid;
+        }
+
+        h2.news-title1{
+            /* 为了边框与文字高度一致,用inline-block */
+            display: inline-block;
+
+            height: 40px;
+
+            font-size: 20px;
+
+            border-top: 2px red solid;
+
+            margin-top: -2px;
+
+        }
+
+        .news-title1 a{
+            display: block;
+            color: #333;
+            font-weight: bold;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+
+        .news-title2{
+            background-color: rgba(0, 0, 0, 0.39);
+            color: #fff;
+            font-size: 23px;
+            font-weight: bold;
+            margin-top: -35px;
+            margin-left: 10px;
+
+        }
+
+        .news-img{
+            height: 190px;
+            overflow: hidden;
+        }
+
+        ul{
+            margin: 10px 10px;
+
+            /* 设置项目符号 */
+        }
+
+        li{
+            margin-left: -5px;
+            margin-bottom: 10px;
+        }
+
+        /* 用伪类添加项目符号 */
+        li::before{
+            content: "■";
+            font-size: 5px;
+            color: rgba(170, 170, 170, 0.534);
+
+        }
+
+        li a{
+            font-size: 13px;
+            color: #666;
+        }
+
+        li a:hover{
+            color: rgb(212, 71, 71);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="news-box">
+        <h2 class="news-title1">
+            <a href="#">体育</a>
+        </h2>
+
+        <div class="news-img">
+            <a href="#">
+                <img src="../source/Homework1.png" alt="">
+
+                <h2 class="news-title2">
+                    wo tm zhen bu hui ! ! !
+                </h2>
+            </a>
+        </div>
+
+        <ul class="news-list">
+            <li>
+                <a href="#">
+                    指针不会
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    数据库不会
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    数组不会
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    结构体不会
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+</body>
+</html>

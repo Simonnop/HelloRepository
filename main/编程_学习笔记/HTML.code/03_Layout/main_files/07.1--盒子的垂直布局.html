@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ch">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07.1--盒子的垂直布局</title>
+    <style>
+        .outer {
+            background-color: #bfa;
+            height: 300px;
+
+            margin-bottom: 50px;
+        }
+
+        /* 
+            默认情况下父元素的高度被内容撑开
+        */
+
+        .inner {
+            height: 100px;
+            width: 100px;
+            background-color: lightpink;
+            margin-bottom: 100px;
+        }
+
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: lightskyblue;
+            overflow: hidden;
+        }
+
+        .box2{
+            width: 100px;
+            height: 400px;
+            background-color: mediumaquamarine;
+        }
+
+        /* 
+            如果子元素大小超过了父元素,则子元素会从父元素中溢出
+
+            使用overflow属性来设置父元素如何处理溢出的问题
+                visible 默认值,溢出部分显示
+                hidde 溢出部分不会显示
+                scroll 生成滚动条(两个方向)
+                auto 根据需要生成滚动条
+                overflow-x 处理水平方向
+                overflow-y 处理垂直方向
+        */
+    </style>
+</head>
+
+<body>
+
+    <div class="outer">
+        <div class="inner"></div>
+        <div class="inner"></div>
+    </div>
+
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+
+</body>
+
+</html>

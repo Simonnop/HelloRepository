@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12.1--单位</title>
+    <style>
+
+        /* 
+            长度单位: 
+                像素 px
+                百分比 %
+                    -随父元素改变而改变
+                em
+                    -相对于元素的字体大小
+                    - 1em = 1font-size
+                    -会根据字体大小的改变而改变
+
+                rem
+                    -相对于根元素(html)的字体大小
+                    (默认16px)
+        */
+
+        .box1{
+            width: 160px;
+            height: 160px;
+            background-color: pink;
+        }
+
+        .box2{
+            width: 50%;
+            height: 50%;
+            background-color: cyan;
+        }
+
+        .box3{
+            font-size: 13px;
+            width: 10em;
+            height: 10em;
+            background-color: lightseagreen;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+
+    <div class="box3"></div>
+    
+    
+</body>
+</html>

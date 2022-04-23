@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03.1--常用选择器</title>
+
+    <style>
+        /*
+            元素选择器( 02.1节内容 )
+                作用:根据标签名来选中所有指定元素
+                语法:标签名{}
+                例子: p{} h1{} div{}
+        */
+
+        p{
+            color: rgb(129, 209, 255);
+            font-size: 50px;
+        }
+
+        /*
+            id选择器
+                作用:根据id只选择一个元素(id最好不能重复)
+                语法:#id属性值{}
+                例子:#box{} #red{}
+        */
+
+        #red{
+            color: red;
+        }
+
+        /*
+            class类选择器(用的多)
+            一个标签属性,它和 id 类似,不同的是class可以重复使用
+                - 作用:可以通过class属性来选中一组元素
+                - 语法:.class属性值
+                - 可以给一个元素指定多个class
+        */
+
+        .green{
+            color: greenyellow;
+        }
+
+        .purple{
+            color: purple;
+        }
+
+        .big{
+            font-size: 70px;
+        }
+
+        .small{
+            font-size: 30px;
+        }
+
+        /*
+            *通配选择器
+                - 设置页面中所有元素
+                - 语法*{}
+        */
+
+    </style>
+</head>
+<body>
+    <p>撒活动撒</p>
+    <p id="red">电算化发撒六年的啦</p>
+    <p class="green small">睡觉的健身卡</p>
+    <p class="green ">是覅哦安德拉</p>
+    <p class="purple big">女款速度负担节流</p>
+
+    
+</body>
+</html>

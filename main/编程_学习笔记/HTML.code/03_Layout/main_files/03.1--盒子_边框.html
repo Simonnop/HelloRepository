@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03.1--盒子_边框</title>
+    <style>
+
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+
+            border-width: 10px 20px 30px 40px;
+            /* 
+                指定4个方向的宽度,上 右 下 左 (顺时针) 
+                指定3个值,上 左右 下
+                指定2个值,上下 左右
+                指定1个值,全部
+            */
+            border-color: lightgreen red blue yellowgreen;
+            /* 
+                设置方式与width一样
+            */
+            border-style: solid dotted dashed double;
+            /* 
+                设置方式与width一样
+                solid 实线
+                dotted 点状虚线
+                dashed 虚线
+                double 双线
+            */
+        }
+
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(97, 42, 173);
+
+            /* 最常用:简写属性 */
+            border:10px rgb(41, 176, 194) solid;
+            border-top: 20px #bfa dotted;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="box1"></div>
+    <br><br>
+    <div class="box2"></div>
+    
+</body>
+</html>

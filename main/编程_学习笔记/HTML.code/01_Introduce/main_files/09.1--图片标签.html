@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>09.1--图片标签</title>
+</head>
+<body>
+    <!-- 
+        图片标签用于应用外部图片
+        使用img标签引入外部图片,img标签是一个自结束标签
+        img元素属于替换元素(块元素与行内元素之间,具有两种元素的特点)
+            
+            src 指定外部图片路径(规则与超链接一样)
+            alt 图片的描述(默认情况下不会显示,图片无法加载时会显示)
+            
+            width 图片的宽度(单位是像素)
+            height 图片的高度
+            (若只改一个会维持比例,等比例缩小或放大)
+            
+            注意:
+                一般情况下在pc端,不建议修改图片的大小,最好自己来切图
+                但在移动端会经常缩放
+
+        图片的格式:
+            jpeg(jpg)
+                -支持的颜色丰富,不支持透明效果,不支持动图
+                -一般来显示照片
+            gif
+                -支持的颜色少,支持简单透明效果,支持动图
+                -一般显示颜色单一的图片与动图
+            png
+                -支持的颜色丰富,支持复杂透明效果,不支持动图
+                -一般显示颜色丰富,复杂透明的图
+            webp
+                -谷歌专门表示网页中的图片的格式
+                -支持的颜色丰富,支持透明效果,支持动图,文件特别小,具有所有的优点
+                -致命缺点:兼容性不好
+            base64
+                -将图片使用 base64编码,这样可以将图片转换为字符,通过字符的形式引入
+                -一般都是需要与网页一起加载的图片才使用(加载速度快)
+                -有转换为 base64的网站供使用
+
+        原则: 效果一样,用小的; 效果不一样,用效果好的
+        
+     -->
+
+     <img width="400" height="200" src="../img/Homework1.png" alt="作业" >
+
+     <img width="400" src="https://img2.baidu.com/it/u=2295216877,2970323800&fm=26&fmt=auto" alt="歼20" >
+
+     <img src="../img/Homework3.png" alt="作业">
+</body>
+</html>

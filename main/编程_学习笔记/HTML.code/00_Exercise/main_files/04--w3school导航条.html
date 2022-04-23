@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ch">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04--w3school导航条</title>
+    <link rel="stylesheet" href="../CSS/Reset.css">
+    <style>
+        ul {
+            width: 1047px;
+            height: 48px;
+            background-color: rgba(128, 128, 128, 0.233);
+            margin: 50px auto;
+        }
+
+        .nav li {
+
+            float: left;
+            box-sizing: border-box;
+        }
+
+        .nav li:hover {
+            background-color: rgb(75, 75, 75);
+        }
+
+        .nav a {
+            line-height: 48px;
+            padding: 0 33px;
+            /* 转化为块元素才能设置高度 */
+            display: block;
+            height: 48px;
+            text-decoration: none;
+            color: #777;
+        }
+
+        .nav a:hover {
+            color: rgba(255, 255, 255, 0.719);
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="nav">
+        <li>
+            <a href="#">HTML/CSS</a>
+        </li>
+
+        <li>
+            <a href="#">Browser Side</a>
+        </li>
+
+        <li>
+            <a href="#">Server Side</a>
+        </li>
+
+        <li>
+            <a href="#">Programming</a>
+        </li>
+
+        <li>
+            <a href="#">XML</a>
+        </li>
+
+        <li>
+            <a href="#">Web Building</a>
+        </li>
+
+        <li>
+            <a href="#">Reference</a>
+        </li>
+
+    </ul>
+
+</body>
+
+</html>

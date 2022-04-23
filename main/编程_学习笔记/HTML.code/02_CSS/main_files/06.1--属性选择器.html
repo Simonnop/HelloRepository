@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>06.1--属性选择器</title>
+
+    <style>
+        /* 
+            [属性名] 选择含有指定属性的元素
+            [属性名=指定值] 选择含有指定属性和属性值的元素
+            [属性名^=属性值] 选择属性值以指定值结尾的元素
+            [属性名$=属性值] 选择属性值以指定值开头的元素
+            [属性名*=属性值] 选择属性值中含有某些值的元素
+
+            好像只能用一次
+        */
+
+        p[title$=f]{
+            color: blue;
+        }
+
+        /* p[title^=w]{
+            color: yellow;
+        } */
+
+    </style>
+</head>
+<body>
+    <p title="abc">撒活动撒</p>
+    <p title="abcef">电算化发撒六年的啦</p>
+    <p title="www">睡觉的健身卡</p>
+    <p title="www">是覅哦安德拉</p>
+    <p>女款速度负担节流</p>
+</body>
+</html>

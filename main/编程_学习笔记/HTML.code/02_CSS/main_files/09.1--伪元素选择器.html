@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>09.1--伪元素选择器</title>
+</head>
+<style>
+
+    p{
+        font-size: 40px;
+    }
+
+    /* 
+        伪元素  不存在的元素,特殊的状态
+        用  ::  开头
+
+        ::first-letter  第一个字母
+        ::first-line  第一行
+        ::selection  选中的内容
+        
+        添加内容
+        ::before  元素的开始
+        ::after  元素的最后
+            -结合content属性使用
+
+        
+    */
+
+    p::first-letter{
+        font-size: 60px;
+    }
+
+    p::first-line{
+        color: salmon;
+    }
+
+    p::selection{
+        background-color: seagreen;
+    }
+
+    div::before{
+        content:'理解';
+        color: skyblue;
+    }
+
+    div::after{
+        content:'理解';
+        color: skyblue;
+    }
+
+</style>
+<body>
+    
+    <div>时代哦收到</div>
+
+    <p>
+        啥哭声哆啦后立即受到拉萨机的理解啊
+    </p>
+
+</body>
+</html>

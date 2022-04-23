@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>08.1--JSON</title>
+    <script>
+
+        // 创建一个对象
+        var obj = {name:"孙悟空",age:18,gender:"男"}
+        document.write(obj.name);
+
+        /* 
+            JSON简介
+                - JS中的对象只有JS自己认识,其他的语言都不认识
+                - JSON就是一个特殊格式的字符串,可以被任意语言所识别
+                    并且可以转换为任意语言中的对象,
+                - JSON在开发中主要用来数据的交互
+
+            JSON用法
+                - JaveScript Object Notation   JS对象表示法
+                - JSON和JS的对象格式一样,只不过JSON字符串的属性名必须加上双引号
+                - 其他的与JS语法一致
+            JSON分类
+                1.JSON对象{}
+                2.JSON数组[]
+            JSON中允许的值
+                1.字符串
+                2.数值
+                3.Boolean
+                4.Null
+                5.对象(不包括函数)
+                6.数组
+        */
+
+        var info = '{"name":"孙悟空","age":18,"gender":"男"}'
+        var arr = '[1,2,3,4,"hi"]'
+
+        /* 
+            将JSON字符串转换为JS中的对象
+                - 在JS中,为我们提供了一个工具类,就叫JSON
+                - 这个对象可以帮助我们互相转换
+                - IE7以下不兼容
+
+            json --> js
+                JSON.parse()
+                    - 需要一个JSON字符串作为参数,返回值为JS对象
+
+            js --> json
+                JSON.stringify()
+                    - 需要一个JS对象作为参数,返回值为JSON字符串
+        */
+
+        var js_info = JSON.parse(info);
+        document.write("<br />"+js_info.gender);
+
+        var str = {name:"猪八戒",age:25,gender:"男"};
+        var json_str = JSON.stringify(str);
+        document.write("<br />"+json_str);
+
+        /* 
+            eval()
+                - 这个函数可以用来执行一段字符串形式的JS代码,并将执行结果返回
+                - 兼容 IE7 ,但尽量不使用,具有安全隐患,且性能较差
+            
+            需要兼容 IE7 则可以引用外部 JS文件
+        */
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

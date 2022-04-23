@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ch">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05.1--clear</title>
+    <style>
+        div {
+            font-size: 50px;
+        }
+
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+            float: left;
+        }
+
+        .box2{
+            width: 400px;
+            height: 400px;
+            background-color: yellow;
+            float: right;
+        }
+
+        .box3 {
+            width: 200px;
+            height: 300px;
+            background-color: seagreen;
+            /* 
+                由于box1的浮动,导致box3位置上移
+                    也就是box3受到了box1浮动的影响,位置发生了改变
+
+                清除浮动元素产生的影响: clear属性
+                    - 可选值:
+                        left 清除左侧元素的影响
+                        right 清除右侧元素的影响
+                        both 清除两侧中的最大影响
+                    - 原理: 
+                        清除后,浏览器自动为元素添加一个上外边距
+            */
+
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+
+
+
+</body>
+
+</html>

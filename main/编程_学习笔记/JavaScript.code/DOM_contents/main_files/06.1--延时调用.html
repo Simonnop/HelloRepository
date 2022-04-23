@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>06.1--延时调用</title>
+    <script>
+
+        var i =1;
+
+        var timer = setInterval(function(){
+            document.write(i++ +"<br />");
+        },500);
+
+        /* 
+            setTimeout()
+                - 延时调用
+                - 函数不马上执行,而是隔一段时间再执行,只执行一次
+
+            延时调用与定时调用实际上是可以互相代替的,在开发中根据自己的需要选择
+        */
+
+        setTimeout(function(){
+            document.write("timer here");
+        },2000);
+
+        /* 
+            clearTimeout()
+                - 关闭延时调用
+                - 参数为定时器的标识
+        */
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

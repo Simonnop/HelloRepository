@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05.1--计时器</title>
+    <script>
+        window.onload = function () {
+            var count = document.getElementById("timer");
+
+            /* 
+                如果希望一段程序每间断一个时间执行一次,可以使用定时调用
+
+                setInterval()
+                    - 定时调用
+                    - 可以将一个函数,每隔一段时间执行一次
+                    - 参数:
+                        1.回调函数
+                        2.间隔的事件,单位是毫秒
+                    - 返回值:
+                        一个Number的数据,这个数值是定时器的标识
+            */
+
+            var i = 0;
+
+            var timer = setInterval(function () {
+                count.innerHTML = i++;
+
+                if( i==5){
+                    clearInterval(timer);
+                }
+
+            }, 1000)
+
+            /* 
+                clearInterval()
+                    - 关闭定时器
+                    - 参数: 定时器的标识
+            */
+
+            
+
+
+
+
+        }
+    </script>
+</head>
+
+<body>
+    <h1 id="timer"></h1>
+
+</body>
+
+</html>

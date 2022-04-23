@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01.1--CSS简介</title>
+</head>
+
+<body>
+
+    <!-- 
+        网页分三个部分:
+            结构(HTML)
+            表现(CSS)
+            行为(Javascript)
+
+        CSS
+            - 层叠样式表
+            - 网页实际上是一个多层的结构,通过css可以为每一层来设置样式,最终看到的是最上层
+            - 总之,css用来设置网页中页面的样式
+
+
+     -->
+
+    <!-- 
+        使用CSS来修改元素的样式
+
+        第一种(内联样式)
+            - 标签内使用style属性设置元素的样式
+            - 只能对一个标签内的元素更改,不方便
+            - 开发时绝对不要使用内联样式
+     -->
+
+    <p style="color: crimson;font-size: 50px;">少小离家老大回</p>
+
+    <p>今天天气真不错!</p>
+
+    <!-- 
+        第二种
+            - 将样式编写到 head中的style标签里面
+            - 通过css选择器设置标签内元素样式
+            - 可以同时设置多个
+            - 问题:只能对一个网页起作用,不能跨页面进行复用
+     -->
+
+    <style>
+        p1 {
+            color: lightseagreen;
+            font-size: 30px;
+        }
+    </style>
+
+    <p1>这里改了颜色</p1>
+    <br>
+    <p1>这里也改了颜色</p1>
+
+    <!-- 
+        第三种(外部样式表)(一般使用)
+            - 可以将css的样式编写到外部的css文件中
+            - 然后通过link标签建立连接
+            - 想要其样式的网页都可以进行引用
+            - 可以在不同页面之间进行复用,使用浏览器的缓存机制,提高加载速度
+     -->
+    
+    <link rel="stylesheet" href="./style.css">
+
+</body>
+
+</html>

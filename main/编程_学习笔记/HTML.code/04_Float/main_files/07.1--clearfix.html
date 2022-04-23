@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07.1--clearfix</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: royalblue;
+        }
+
+
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: salmon;
+            margin-top: 100px;
+        }
+
+        /* 
+            clearfix 可以同时解决高度塌陷与外边距重叠的问题
+
+            当你遇到这些问题,则可以直接使用 clearfix类
+        */
+
+        .clearfix::before,
+        .clearfix::after{
+            content: '';
+            display: table;
+            clear: both;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="box1 clearfix" >
+        <div class="box2"></div>
+    </div>
+    
+    
+</body>
+</html>

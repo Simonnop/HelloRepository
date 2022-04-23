@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07.1--类的操作</title>
+    <style>
+        .b1 {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+        }
+
+        .b2 {
+            height: 300px;
+            background-color: rgb(230, 199, 173);
+        }
+    </style>
+
+    <script>
+
+        window.onload = function () {
+            var btn01 = document.getElementById("btn01");
+            var btn02 = document.getElementById("btn02");
+            var btn03 = document.getElementById("btn03");
+            var btn04 = document.getElementById("btn04");
+            var box = document.getElementById("box");
+
+            btn01.onclick = function () {
+                //修改 box的样式
+                box.style.width = "300px";
+                box.style.height = "300px";
+                box.style.backgroundColor = "red";
+                /* 
+                    这样要渲染三次,性能较差
+                    希望一行代码同时修改多个样式
+                */
+            }
+
+            btn02.onclick = function () {
+                // 这样是间接修改样式,可以同时修改多个样式
+                box.className = "b2";
+            }
+
+            btn03.onclick = function () {
+                // 添加样式,相同的覆盖,拼块时一定要有个空格
+                box.className += " b2";
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <button id="btn01">点击修改box的样式</button>
+
+    <div id="box" class="b1"></div>
+
+    <button id="btn02">点击修改box的样式</button>
+
+    <button id="btn03">添加box的样式</button>
+
+</body>
+
+</html>

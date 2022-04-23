@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02.1--浮动的其他特点</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+
+        }
+
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: steelblue;
+
+            float: left;
+        }
+
+        /* 
+            特点:
+                浮动元素不会盖住文字,文字会自动环绕在元素的周围
+        */
+
+        .block{
+            width: 200px;
+            height: 200px;
+        }
+
+        .box2{
+            background-color: teal;
+
+            float: left;
+
+            /* 
+                文字脱离文档流后的特点:
+                    块元素:
+                        1.块元素不在独占页面的一行
+                        2.脱离文档流后,块元素的宽度与高度默认被内容撑开
+                    行内元素: 
+                        行内元素脱离文档流会变成块元素,特点与块元素一样
+
+                    脱离文档流之后,就不区分块元素与行内元素了
+
+            */
+        }
+
+        .box3{
+            background-color: darksalmon;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <p>很舒服哈苏很愤怒苏海南宽度哈苦命京东方京东四分Jodi金佛i京东i飞机送i的京东覅就是滴哦附近的路口睡觉了大幅高开婚房类似的就放肆的复合时空的那份速度回复那地方螺丝钉解放了绝对实力的反馈及时了解对方手机铃声的还是还是开端还是宽度哈克什么都没贺卡收到吗一速度很快撒谎的可是大家开始还觉得和客户收款进度很快撒谎的可算好看</p>
+    <div class="block"></div>
+    <div class="box2">hello</div>
+    <div class="box3">hello</div>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05.1--绝对定位元素的布局</title>
+    <style>
+        .box1{
+            width: 400px;
+            height: 400px;
+
+            background-color: aquamarine;
+
+            position: relative;
+        }
+        .box2{
+            position: absolute;
+
+            width: 100px;
+            height: 100px;
+            background-color: sandybrown;
+
+            margin: auto;
+
+            right: 0;
+            left: 0;
+
+            top: 0;
+            bottom: 0;
+
+
+        }
+
+        /* 
+            水平布局
+                left+right+width+padding+margin+border=包含块的内部宽度
+
+            当开启了绝对定位后
+                水平方向的布局等式就需要添加 left和 right两个值
+                    此时规则和之前一样只是多添加了两个值
+                        当发生过度约束:
+                            right值会自动换成 auto
+
+                    - 可设置 auto的值
+                        margin width left right
+
+                    - 因为 left和 right的值默认是 auto,所以需要设置 margin则要写死 left和 right
+
+                垂直方向的布局也需要满足
+                    top+bottom+height+margin+padding+border=包含块的内部高度
+        */
+
+
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+    
+</body>
+</html>

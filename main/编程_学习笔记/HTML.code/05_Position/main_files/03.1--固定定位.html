@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ch">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03.1--固定定位</title>
+    <style>
+        body {
+            font-size: 50px;
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+        }
+
+        /* 
+            固定定位:
+                - 将元素的 position属性设置为 fixed
+                - 固定定位是一种绝对定位,大部分特点与绝对定位一样
+                    唯一不同的是固定定位永远参照于浏览器的视口进行定位
+        */
+
+        .box1 {
+            background-color: cadetblue;
+        }
+
+        .box2 {
+            background-color: aqua;
+
+            position: fixed;
+            left: 0px;
+            top: 0px;
+        }
+
+        .box3 {
+            background-color: burlywood;
+        }
+
+        .box4{
+            width: 400px;
+            height: 400px;
+            background-color: chartreuse;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">1</div>
+
+    <div class="box4">4
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+    </div>
+   
+</body>
+
+</html>

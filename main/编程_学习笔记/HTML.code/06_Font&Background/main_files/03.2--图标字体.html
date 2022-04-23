@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03.2--图标字体</title>
+    <link rel="stylesheet" href="../CSS/all.css">
+    <style>
+        li{
+            list-style: none;
+        }
+
+        /* 
+            通过伪元素来设置图标字体
+                1.找到要设置图标的元素用before或after选中
+                2.在content中添加字体编码
+                3.设置字体的样式
+        */
+
+        li::before{
+            content: '\f1b0';
+            font-family:'Font Awesome 5 Free';
+            font-weight: 600;
+            color: blue;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>锄禾日当午</li>
+        <li>汗滴禾下土</li>
+        <li>谁之盘中餐</li>
+        <li>粒粒皆辛苦</li>
+    </ul>
+
+    <!-- 
+        通过实体添加
+            &#x图标编码
+     -->
+    
+     <span class="fas">&#xf0f3</span>
+
+    
+</body>
+</html>
