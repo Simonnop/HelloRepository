@@ -1,0 +1,83 @@
+{name:{$regex:"蛋糕"}}
+
+{brand:{$regex:"白象"}}
+
+{type:"drink"}
+
+
+// 初始数据
+// use
+
+GroupMembers_1=
+{
+	'name': "苏睿贤",
+   'hobby':{
+	'games':[
+		   "彩虹六号",
+		   "城市天际线",],
+	   'sport': "排球"
+      },
+   'edu':[
+      {'SeniorHigh':'FLS'},
+      {'College':'HUST'}]
+}
+
+GroupMembers_2=
+{
+	'name': "卢本伟",
+   'hobby':{
+	   'games':[
+		   "吃鸡",
+		   "欢乐斗地主",
+         "英雄联盟"
+	   ],
+	   'drink': "卡布奇诺"
+   },
+	'age': 25
+}
+db.table_Groupmembers.insertMany([GroupMembers_1,GroupMembers_2])
+
+
+
+// 数组中添加对象
+
+db.table_Groupmembers.update(
+   { 'name': '苏睿贤' },
+   {$set: 
+      { 
+         'edu.2.JuniorHigh': "FLS",
+         'edu.2.class':'207'
+      }
+   }
+)
+
+
+// 聚合查询
+
+// 插入数据
+
+
+// 聚合查询语句
+
+db.table_workers.aggregate(
+   [
+      { "$match": { "details.id": "1001" }},
+      { "$unwind": "$details" }
+   ]
+)
+
+
+db.table_workers.aggregate(
+   [
+      { "$match": { "details.id": "1001" }},
+      { "$unwind": "$details" },
+      { "$match": { "details.id":"1002" }},
+      { "$project": { "Technology": "$details.Technology", "_id":0 }}
+   ]
+)
+
+
+
+
+
+
