@@ -10,7 +10,7 @@ public class MyMvcConfig implements WebMvcConfigurer {
 
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
-        registry.addViewController("/").setViewName("userlist");
+        registry.addViewController("/index").setViewName("userlist");
     }
 
 }

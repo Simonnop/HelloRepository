@@ -45,7 +45,6 @@
                 <th>密码</th>
                 <th>邮箱</th>
                 <th>性别</th>
-                <th>生日</th>
             </tr>
             </thead>
             <tbody>
@@ -55,7 +54,6 @@
                 <td th:text="${userByPage.getPassword()}"></td>
                 <td th:text="${userByPage.getEmail()}"></td>
                 <td th:text="${userByPage.getGender()==0?'女':'男'}"></td>
-                <td th:text="${#dates.format(userByPage.getBirth(),'yyyy-MM-dd')}"></td>
             </tr>
             </tbody>
         </table>
@@ -74,7 +72,7 @@
 </div>
 
 <script>
-    window.onload = function (){
+    window.onload = function () {
         //获取pageNumber
         let pageNumber = document.getElementById("pageNumber");
         let number = parseInt(pageNumber.innerText);
