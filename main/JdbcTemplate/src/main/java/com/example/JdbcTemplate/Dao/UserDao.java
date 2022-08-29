@@ -40,8 +40,6 @@ public class UserDao {
 
         //调用对象,使用方法执行sql
         List<Map<String,Object>> userList = jdbcTemplate.queryForList(sql);
-
-
         //同时定义一个List来接收sql执行结果(Object类 -> User类)
         ArrayList<User> users = new ArrayList<User>();
         // 对列表中26行数据依次进行转化,转为User对象
@@ -52,10 +50,6 @@ public class UserDao {
             String password = (String) userList.get(i).get("password");
             String email = (String) userList.get(i).get("email");
             int gender = ((Number) userList.get(i).get("gender")).intValue();
-
-            SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
-            System.out.println(userList.get(i).get("birth").getClass());
-            Date birth = dateFormat.parse((String) userList.get(i).get("birth"));
 
             User user = new User(id, username, password, email, gender, birth);
             users.add(user);
