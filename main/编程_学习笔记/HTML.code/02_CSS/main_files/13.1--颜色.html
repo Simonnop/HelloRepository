@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13.1颜色</title>
+    <style>
+
+        /* 
+            rgb 范围: 0-255
+
+            rgba 调节透明度: alpha范围: 0-1
+
+            十六进制RGB: #红色绿色蓝色 (两位两位重复可以简写)
+
+            HSL值 HSLA值 (工业设计用)
+                H 色相 (0-360)
+                S 饱和度 (0-100)
+                L 亮度 (0-100)
+        */
+
+        .box1{
+            width: 160px;
+            height: 160px;
+            background-color: rgb(100, 200, 150);
+        }
+
+        .box2{
+            width: 160px;
+            height: 160px;
+            background-color: rgba(100, 200, 150,0.5);
+        }
+
+        .box3{
+            width: 160px;
+            height: 160px;
+            background-color: #bfa;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="box1"></div>
+    <br><br>
+    <div class="box2"></div>
+    <br><br>
+    <div class="box3"></div>
+
+</body>
+</html>

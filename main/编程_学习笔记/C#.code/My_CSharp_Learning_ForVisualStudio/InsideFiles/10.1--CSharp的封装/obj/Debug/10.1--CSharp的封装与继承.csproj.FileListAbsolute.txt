@@ -1,0 +1,8 @@
+C:\Users\苏菲后花园里有饲养宝利的小马圈\Desktop\OneDrive\C#.code\My_CSharp_Learning_ForVisualStudio\InsideFiles\10.1--CSharp的封装\bin\Debug\10.1--CSharp的封装.exe.config
+C:\Users\苏菲后花园里有饲养宝利的小马圈\Desktop\OneDrive\C#.code\My_CSharp_Learning_ForVisualStudio\InsideFiles\10.1--CSharp的封装\bin\Debug\10.1--CSharp的封装.exe
+C:\Users\苏菲后花园里有饲养宝利的小马圈\Desktop\OneDrive\C#.code\My_CSharp_Learning_ForVisualStudio\InsideFiles\10.1--CSharp的封装\bin\Debug\10.1--CSharp的封装.pdb
+C:\Users\苏菲后花园里有饲养宝利的小马圈\Desktop\OneDrive\C#.code\My_CSharp_Learning_ForVisualStudio\InsideFiles\10.1--CSharp的封装\obj\Debug\10.1--CSharp的封装与继承.csproj.AssemblyReference.cache
+C:\Users\苏菲后花园里有饲养宝利的小马圈\Desktop\OneDrive\C#.code\My_CSharp_Learning_ForVisualStudio\InsideFiles\10.1--CSharp的封装\obj\Debug\10.1--CSharp的封装与继承.csproj.SuggestedBindingRedirects.cache
+C:\Users\苏菲后花园里有饲养宝利的小马圈\Desktop\OneDrive\C#.code\My_CSharp_Learning_ForVisualStudio\InsideFiles\10.1--CSharp的封装\obj\Debug\10.1--CSharp的封装与继承.csproj.CoreCompileInputs.cache
+C:\Users\苏菲后花园里有饲养宝利的小马圈\Desktop\OneDrive\C#.code\My_CSharp_Learning_ForVisualStudio\InsideFiles\10.1--CSharp的封装\obj\Debug\10.1--CSharp的封装.exe
+C:\Users\苏菲后花园里有饲养宝利的小马圈\Desktop\OneDrive\C#.code\My_CSharp_Learning_ForVisualStudio\InsideFiles\10.1--CSharp的封装\obj\Debug\10.1--CSharp的封装.pdb
