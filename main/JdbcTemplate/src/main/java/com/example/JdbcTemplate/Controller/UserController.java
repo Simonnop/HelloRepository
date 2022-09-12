@@ -19,7 +19,7 @@ public class UserController {
     UserDao userDao;
 
     @GetMapping("/index")
-    public String showList(Model model) {
+    public String showList(Model model) throws ParseException {
         List<User> users = userDao.getUserList();
         model.addAttribute("users", users);
 
@@ -27,12 +27,12 @@ public class UserController {
     }
 
     @GetMapping("/user/{pageSize}/{currentPage}")
-    public PageList<User> UserPageList(@PathVariable("pageSize") int pageSize, @PathVariable("currentPage") int currentPage) {
+    public PageList<User> UserPageList(@PathVariable("pageSize") int pageSize, @PathVariable("currentPage") int currentPage) throws ParseException {
         return userDao.getUserListByPage(currentPage,pageSize);
     }
 
     @GetMapping({"/user/listByPage/{currentPage}","localhost:8080/user/listByPage/{currentPage}"})
-    public String showListByPage(@PathVariable("currentPage") int currentPage,Model model) {
+    public String showListByPage(@PathVariable("currentPage") int currentPage,Model model) throws ParseException {
         PageList<User> userPageList = UserPageList(7, currentPage);
 
         //起不同的名，与showList区分一下

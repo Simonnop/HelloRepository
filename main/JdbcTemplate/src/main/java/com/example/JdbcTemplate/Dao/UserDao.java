@@ -51,7 +51,7 @@ public class UserDao {
             String email = (String) userList.get(i).get("email");
             int gender = ((Number) userList.get(i).get("gender")).intValue();
 
-            User user = new User(id, username, password, email, gender, birth);
+            User user = new User(id, username, password, email, gender);
             users.add(user);
         }
 
