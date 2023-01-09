@@ -1,0 +1,8 @@
+C:\Users\苏菲后花园里有饲养宝利的小马圈\Desktop\OneDrive\C#.code\My_CSharp_Learning_ForVisualStudio\InsideFiles\09.1--Class类\obj\Debug\09.1--Class类.csproj.AssemblyReference.cache
+C:\Users\苏菲后花园里有饲养宝利的小马圈\Desktop\OneDrive\C#.code\My_CSharp_Learning_ForVisualStudio\InsideFiles\09.1--Class类\obj\Debug\09.1--Class类.csproj.SuggestedBindingRedirects.cache
+C:\Users\苏菲后花园里有饲养宝利的小马圈\Desktop\OneDrive\C#.code\My_CSharp_Learning_ForVisualStudio\InsideFiles\09.1--Class类\obj\Debug\09.1--Class类.csproj.CoreCompileInputs.cache
+C:\Users\苏菲后花园里有饲养宝利的小马圈\Desktop\OneDrive\C#.code\My_CSharp_Learning_ForVisualStudio\InsideFiles\09.1--Class类\bin\Debug\09.1--Class类.exe.config
+C:\Users\苏菲后花园里有饲养宝利的小马圈\Desktop\OneDrive\C#.code\My_CSharp_Learning_ForVisualStudio\InsideFiles\09.1--Class类\bin\Debug\09.1--Class类.exe
+C:\Users\苏菲后花园里有饲养宝利的小马圈\Desktop\OneDrive\C#.code\My_CSharp_Learning_ForVisualStudio\InsideFiles\09.1--Class类\bin\Debug\09.1--Class类.pdb
+C:\Users\苏菲后花园里有饲养宝利的小马圈\Desktop\OneDrive\C#.code\My_CSharp_Learning_ForVisualStudio\InsideFiles\09.1--Class类\obj\Debug\09.1--Class类.exe
+C:\Users\苏菲后花园里有饲养宝利的小马圈\Desktop\OneDrive\C#.code\My_CSharp_Learning_ForVisualStudio\InsideFiles\09.1--Class类\obj\Debug\09.1--Class类.pdb

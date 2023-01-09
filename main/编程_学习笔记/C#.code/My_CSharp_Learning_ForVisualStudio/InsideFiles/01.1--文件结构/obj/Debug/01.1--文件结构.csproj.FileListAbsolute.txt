@@ -1,0 +1,16 @@
+C:\Users\苏菲后花园里有饲养宝利的小马圈\Desktop\OneDrive\C#.code\My_CSharp_Learning_ForVisualStudio\InsideFiles\01.1--文件结构\bin\Debug\01.1--文件结构.exe.config
+C:\Users\苏菲后花园里有饲养宝利的小马圈\Desktop\OneDrive\C#.code\My_CSharp_Learning_ForVisualStudio\InsideFiles\01.1--文件结构\bin\Debug\01.1--文件结构.exe
+C:\Users\苏菲后花园里有饲养宝利的小马圈\Desktop\OneDrive\C#.code\My_CSharp_Learning_ForVisualStudio\InsideFiles\01.1--文件结构\bin\Debug\01.1--文件结构.pdb
+C:\Users\苏菲后花园里有饲养宝利的小马圈\Desktop\OneDrive\C#.code\My_CSharp_Learning_ForVisualStudio\InsideFiles\01.1--文件结构\obj\Debug\01.1--文件结构.csproj.AssemblyReference.cache
+C:\Users\苏菲后花园里有饲养宝利的小马圈\Desktop\OneDrive\C#.code\My_CSharp_Learning_ForVisualStudio\InsideFiles\01.1--文件结构\obj\Debug\01.1--文件结构.csproj.SuggestedBindingRedirects.cache
+C:\Users\苏菲后花园里有饲养宝利的小马圈\Desktop\OneDrive\C#.code\My_CSharp_Learning_ForVisualStudio\InsideFiles\01.1--文件结构\obj\Debug\01.1--文件结构.csproj.CoreCompileInputs.cache
+C:\Users\苏菲后花园里有饲养宝利的小马圈\Desktop\OneDrive\C#.code\My_CSharp_Learning_ForVisualStudio\InsideFiles\01.1--文件结构\obj\Debug\01.1--文件结构.exe
+C:\Users\苏菲后花园里有饲养宝利的小马圈\Desktop\OneDrive\C#.code\My_CSharp_Learning_ForVisualStudio\InsideFiles\01.1--文件结构\obj\Debug\01.1--文件结构.pdb
+C:\Users\admin\OneDrive\C#.code\My_CSharp_Learning_ForVisualStudio\InsideFiles\01.1--文件结构\bin\Debug\01.1--文件结构.exe.config
+C:\Users\admin\OneDrive\C#.code\My_CSharp_Learning_ForVisualStudio\InsideFiles\01.1--文件结构\bin\Debug\01.1--文件结构.exe
+C:\Users\admin\OneDrive\C#.code\My_CSharp_Learning_ForVisualStudio\InsideFiles\01.1--文件结构\bin\Debug\01.1--文件结构.pdb
+C:\Users\admin\OneDrive\C#.code\My_CSharp_Learning_ForVisualStudio\InsideFiles\01.1--文件结构\obj\Debug\01.1--文件结构.csproj.AssemblyReference.cache
+C:\Users\admin\OneDrive\C#.code\My_CSharp_Learning_ForVisualStudio\InsideFiles\01.1--文件结构\obj\Debug\01.1--文件结构.csproj.SuggestedBindingRedirects.cache
+C:\Users\admin\OneDrive\C#.code\My_CSharp_Learning_ForVisualStudio\InsideFiles\01.1--文件结构\obj\Debug\01.1--文件结构.csproj.CoreCompileInputs.cache
+C:\Users\admin\OneDrive\C#.code\My_CSharp_Learning_ForVisualStudio\InsideFiles\01.1--文件结构\obj\Debug\01.1--文件结构.exe
+C:\Users\admin\OneDrive\C#.code\My_CSharp_Learning_ForVisualStudio\InsideFiles\01.1--文件结构\obj\Debug\01.1--文件结构.pdb

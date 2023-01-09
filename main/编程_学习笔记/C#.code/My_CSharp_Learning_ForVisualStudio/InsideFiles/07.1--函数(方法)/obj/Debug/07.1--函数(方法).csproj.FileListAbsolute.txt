@@ -1,0 +1,8 @@
+C:\Users\苏菲后花园里有饲养宝利的小马圈\Desktop\OneDrive\C#.code\My_CSharp_Learning_ForVisualStudio\InsideFiles\07.1--函数(方法)\bin\Debug\07.1--函数(方法).exe.config
+C:\Users\苏菲后花园里有饲养宝利的小马圈\Desktop\OneDrive\C#.code\My_CSharp_Learning_ForVisualStudio\InsideFiles\07.1--函数(方法)\bin\Debug\07.1--函数(方法).exe
+C:\Users\苏菲后花园里有饲养宝利的小马圈\Desktop\OneDrive\C#.code\My_CSharp_Learning_ForVisualStudio\InsideFiles\07.1--函数(方法)\bin\Debug\07.1--函数(方法).pdb
+C:\Users\苏菲后花园里有饲养宝利的小马圈\Desktop\OneDrive\C#.code\My_CSharp_Learning_ForVisualStudio\InsideFiles\07.1--函数(方法)\obj\Debug\07.1--函数(方法).csproj.AssemblyReference.cache
+C:\Users\苏菲后花园里有饲养宝利的小马圈\Desktop\OneDrive\C#.code\My_CSharp_Learning_ForVisualStudio\InsideFiles\07.1--函数(方法)\obj\Debug\07.1--函数(方法).csproj.SuggestedBindingRedirects.cache
+C:\Users\苏菲后花园里有饲养宝利的小马圈\Desktop\OneDrive\C#.code\My_CSharp_Learning_ForVisualStudio\InsideFiles\07.1--函数(方法)\obj\Debug\07.1--函数(方法).csproj.CoreCompileInputs.cache
+C:\Users\苏菲后花园里有饲养宝利的小马圈\Desktop\OneDrive\C#.code\My_CSharp_Learning_ForVisualStudio\InsideFiles\07.1--函数(方法)\obj\Debug\07.1--函数(方法).exe
+C:\Users\苏菲后花园里有饲养宝利的小马圈\Desktop\OneDrive\C#.code\My_CSharp_Learning_ForVisualStudio\InsideFiles\07.1--函数(方法)\obj\Debug\07.1--函数(方法).pdb
